@@ -1,5 +1,4 @@
 import React from 'react';
-import { useAuth0 } from "@auth0/auth0-react";
 import { Link, useNavigate } from 'react-router-dom'; // Import Link and useHistory for routing
 import './Header.css'; // Import the CSS file for styling
 import LogoutButton from "./LogoutButton"
