@@ -1,0 +1,77 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5cm; /* Adjust the height as needed */
+    background-color: #5ddcffd6; /* Example background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    box-shadow: 0 2px 4px #165f65d6; /* Example shadow */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.dropdown select {
+    width: 200px;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    background-color: #0004ff;
+    color: #12b4ff;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px; /* Adjust border radius as needed */
+    cursor: pointer; 
+    text-decoration: underline;
+}
+
+.fresh-save{
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 31px; 
+    font-family: 'Lato', sans-serif;    
+    align-items: center; /* Align items vertically */
+    font-weight: bold;
+
+}
+.cart-button button{
+    width: 70px;
+    background-color: #de69bd;
+    color: #0c0d0c;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.profile-button button{
+    width: 100px;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+
+    background-color: #d269de;
+    color: #0c0c0b;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.cart-icon {
+    width: 40%; /* Set width to 1/8 of the original size */
+    height: auto; /* Maintain aspect ratio */
+}
+.search-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+.search-input {
+    padding: 8px 12px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Add border to the input */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    font-size: 16px; /* Set font size */
+}
+.search-icon {
+    width: 8%; /* Set width to 1/8 of the original size */
+    margin-left: 10px; /* Adjust margin to separate from the input */
+}
