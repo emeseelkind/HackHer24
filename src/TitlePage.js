@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./TitlePage.css"; // Import the CSS file for styling
 import LoginButton from "./LoginButton"; // Import the LoginButton component
 import Header from "./Header";
-import LogoMain from "./LogoMain.png";
 import RegisterBusinessForm from "./RegisterBusinessForm";
 import getUserRequest from "../api/getUserRequest";
 import { useQuery } from "react-query";
@@ -45,22 +44,14 @@ function TitlePage({ setShowPosts, username, setAccountType }) {
       {!isLoading}
       <Header />
       <div className="title-container">
-        <img src={LogoMain} alt="logo" className="logo img" />
 
-        <h1 className="title">FreshSave</h1>
+        <h1 className="title">TutorMe</h1>
         <p className="catchphrase">
-          Where Every Bite Gets a Second Chance to Make a First Impression.
+        catchphrase.
         </p>
         <div className="description">
           <p>
-            FreshSave offers affordable groceries to non-profits, supporting
-            their meal programs for communities in need. We prioritize
-            accessibility to fresh ingredients, aiding organizations combating
-            food insecurity. Through discounted rates, we assist non-profits in
-            maximizing their budgets, fostering collaboration among
-            stakeholders. Together, we combat hunger, one meal at a time. Join
-            us in creating a world without hunger. Welcome to FreshSave, where
-            meals start with compassion and end with hope.
+            tutor me  offers  .
           </p>
           {!userUpdated && (<h3 style={{marginTop:"300px"}}>User: {username}</h3>)}
         </div>
