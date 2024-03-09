@@ -1,4 +1,5 @@
 import React from 'react';
+import { useAuth0 } from "@auth0/auth0-react";
 import { Link, useNavigate } from 'react-router-dom'; // Import Link and useHistory for routing
 import './Header.css'; // Import the CSS file for styling
 import LogoutButton from "./LogoutButton"
@@ -32,13 +33,13 @@ function Header() {
                 {/* Dropdown menu content goes here */}
                 <select onChange={(e) => {
                     const selectedOption = e.target.value;
-                    if (selectedOption === 'tutor') {
+                    if (selectedOption === 'post-food') {
                         handlePostFoodClick();
                     } else if (selectedOption === 'about') {
                         handleAboutUsClick();
                     } else if (selectedOption === 'help') {
                         handleHelpClick();
-                    } else if (selectedOption === 'tutee') {
+                    } else if (selectedOption === 'buying-food') {
                         handleBuyFoodClick();
                     } else if (selectedOption === 'home') {
                         handleTitlePageClick();
@@ -46,8 +47,8 @@ function Header() {
                 }}>
                     <option value="select_an_Option">Select an Option</option>
                     <option value="home">Home</option>
-                    <option value="tutor">Buy Food</option>
-                    <option value="tutee">Post Food</option>
+                    <option value="buying-food">Buy Food</option>
+                    <option value="post-food">Post Food</option>
                     <option value="about">About</option>
                     <option value="help">Help</option>
                 </select>
